@@ -26,7 +26,10 @@ function _getUrl(id = "") {
 
 function query(filterBy) {
   // return storageService.query(KEY)
-  return axios.get(_getUrl(), { params: filterBy }).then((res) => res.data)
+  return axios.get(_getUrl(), { params: filterBy }).then((res) => {
+    console.log(res)
+    return res.data
+  })
 }
 
 function getById(id) {

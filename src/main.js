@@ -11,9 +11,9 @@ const app = createApp(App)
 
 app.use(ElementPlus)
 app.use(VueGoogleMaps, {
-  load: {
-    key: "AIzaSyAjlgFK0ZA3bPcJwKGVSJMLO7JCNku_VRI",
-  },
+  // load: {
+  //   key: "AIzaSyAjlgFK0ZA3bPcJwKGVSJMLO7JCNku_VRI",
+  // },
   autobindAllEvents: true,
 })
 
