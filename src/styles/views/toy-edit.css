@@ -1,0 +1,64 @@
+ /* .el-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+} */
+
+ /* .el-form .el-checkbox-group {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ } */
+
+
+ .el-form>* {
+     font: 1.4em 'Unkempt', sans-serif;
+ }
+
+ .el-form {
+     display: grid;
+     grid-template-columns: [labels] auto [controls] 1fr;
+     grid-auto-flow: row;
+     grid-gap: .8em .5em;
+     background: beige;
+     padding: 1.2em;
+     height: 85vh;
+     /* width: 36em; */
+ }
+
+ .el-form>label,
+ .el-form>fieldset {
+     grid-column: labels;
+     grid-row: auto;
+ }
+
+ .el-form>input,
+ .el-form>select,
+ .el-form>textarea,
+ .el-form>button {
+     grid-column: controls;
+     grid-row: auto;
+     padding: .4em;
+     border: 0;
+ }
+
+ .el-form>fieldset {
+     grid-column: span 2;
+ }
+
+ .el-form>button {
+     background: darkkhaki;
+     color: white;
+ }
+
+ .el-form>textarea {
+     min-height: 3em;
+ }
+
+ .el-form-item__content {
+     position: relative;
+ }
