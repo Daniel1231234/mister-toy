@@ -4,7 +4,7 @@ import router from "./router"
 import store from "./store"
 
 import "./styles/styles.css"
-import "./scss/main.scss"
+// import "./scss/styles.scss"
 
 import ElementPlus from "element-plus"
 import "element-plus/dist/index.css"
